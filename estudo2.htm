@@ -1,0 +1,47 @@
+<!DOCTYPE  html>
+<html>
+<head>
+ <title>Estudo JS do Lusca </title> 
+ <meta>
+ <meta>  
+</head>
+
+<body>
+
+
+
+
+<form name= "FormSoma" action="" method="POST">
+
+    Entre com o Primeiro valor: <input type="text" name="f_n1" /><p></p>
+    Entre com o Segundo valor: <input type="text" name="f_n2" /><p></p>
+    <input type="button" name="btn_somar" value="Somar" onclick="soma()" />
+    <input type="reset"  name="btn_reset" value="Apagar" />
+</form>
+
+<script language="javascript">
+
+var vNumero2,vSoma,vNumero;
+
+function soma(){
+    vNumero= parseInt(document.FormSoma.f_n1.value); 
+    vNumero2= parseInt(document.FormSoma.f_n2.value); 
+
+vSoma= vNumero + vNumero2;
+
+window.alert('Resultado da somatória = ' + vSoma.toString());
+
+
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
